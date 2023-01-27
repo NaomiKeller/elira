@@ -1,0 +1,29 @@
+@mixin anchor {
+	text-decoration: none;
+	color: black;
+	position: relative;
+	&:visited {
+		color: black;
+	}
+}
+
+@mixin button {
+	background: $background;
+	color: #000;
+	border-radius: 1px;
+	padding: 10px 20px;
+	border: none;
+	font-size: 16px;
+	font-family: 'Actor', sans-serif;
+	transition: ease-in-out .3s;
+	min-width: 114px;
+	cursor: pointer;
+	&:hover {
+		background: $highlight;
+		color: white;
+	}
+	@media (max-width: 768px) {
+		margin: 0 auto;
+		display: block;
+	}
+}

@@ -1,0 +1,35 @@
+.collection {
+	.flex {
+		justify-content: space-between;
+		gap: 20px;
+		@media (max-width: 768px) {
+			display: block;
+		}
+		&.collection-top {
+			@media (max-width: 1024px) {
+				display: block;
+			}
+		}
+		.col {
+			flex: unset;
+			img {
+				width: 100%;
+			}
+		}
+		button {
+			@include button;
+			border: 1px solid rgba(0,0,0,50%);
+			max-height: 41px;
+			margin-top: 43px;
+			@media (max-width: 1024px) {
+				margin: 0 auto;
+				margin-bottom: 40px;
+			}
+		}
+		h4 {
+			@media (max-width: 768px) {
+				text-align: center;
+			}
+		}
+	}
+}

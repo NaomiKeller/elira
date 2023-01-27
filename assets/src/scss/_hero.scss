@@ -1,0 +1,75 @@
+.hero {
+	background: url('../../img/hero-bg.png');
+	background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+	box-shadow: 0px 0px 0px 4000px rgba(137, 129, 108, 0.3) inset;
+	position: relative;
+	@media (max-width: 768px) {
+		background: url('../../img/Rectangle\ 3hero-img.png');
+		background-size: cover;
+	}
+	.hero-text {
+		text-align: center;
+		max-width: 599px;
+		display: flex;
+		margin: 0 auto;
+		flex-wrap: wrap;
+		vertical-align: middle;
+		height: 811px;
+		justify-content: center;
+		@media (max-width: 768px) {
+			transform: scale(.6)
+		}
+		h1, h2 {
+			flex-basis: 100%;
+		}
+		h1 {
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			letter-spacing: 40px;
+			margin-left: 57px;
+			position: relative;
+			@media (max-width: 768px) {
+				margin-left: 40px;
+			}
+			&:after {
+				margin: 0;
+				padding: 0;
+				content: '';
+				height: 2px;
+				width: 512px;
+				bottom: 14px;
+				left: 0;
+				position: absolute;
+				background: #fff;
+				@media (max-width: 768px) {
+					width: 489px;
+				}
+			}
+		}
+		h2 {
+			text-shadow: 0px 4px 4px rgba(0,0,0,25%);
+			margin: 0;
+			font-family: 'Gentium Book Basic', serif;
+			font-style: normal;
+			font-weight: 300;
+			margin-left: 20px;
+			font-size: 25px;
+			line-height: 60px;
+			color: #fff;
+			min-width: 100%;
+		}
+	}
+	button {
+		position: absolute;
+		bottom: 20px;
+		transform: translateX(-50%);
+		left: 50%;
+		margin: 0 auto;
+		text-align: center;
+		@include button;
+	}
+}

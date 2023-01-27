@@ -1,0 +1,13 @@
+.make-own {
+	img {
+		min-height: 350px;
+		object-fit: cover;
+		object-position: right;
+	}
+	p {
+		margin-top: 20px;
+		@media (max-width: 768px) {
+			text-align: center;
+		}
+	}
+}

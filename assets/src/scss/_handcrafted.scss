@@ -1,0 +1,36 @@
+.handcrafted {
+	.flex {
+		justify-content: space-between;
+		.col {
+			flex: 0 0 40%;
+			&:first-child {
+				flex: 0 0 50%;
+			}
+			&.img {
+				img {
+					width: 100%;
+					margin-top: 85px;
+				}
+			}
+			button {
+				@include button;
+				border: 1px solid rgba(0,0,0,50%);
+			}
+			p {
+				margin-bottom: 40px;
+			}
+		}
+		@media (max-width: 768px) {
+			flex-wrap: wrap-reverse;
+			.col {
+				flex: 0 0 100%;
+				&:first-child {
+					flex: 0 0 100%;
+				}
+				&.img {
+					text-align: center;
+				}
+			}
+		}
+	}
+}

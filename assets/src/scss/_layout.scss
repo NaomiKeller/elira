@@ -1,0 +1,28 @@
+.flex {
+	display: flex;
+	.col {
+		flex: 1 1 auto;
+	}
+}
+
+body {
+	margin: 0;
+	background: $page-bg;
+}
+
+img {
+	width: 100%;
+}
+
+.container {
+	max-width: 1280px;
+	padding: 0 40px;
+	margin: 0 auto;
+	@media (max-width: 768px) {
+		padding: 0 20px;
+	}
+}
+
+.handcrafted, .collection, .make-own, .explore, footer {
+	margin: 170px auto 0;
+}
